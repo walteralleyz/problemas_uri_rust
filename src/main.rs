@@ -15,6 +15,9 @@ mod produto_simples;
 mod salario;
 mod salario_com_bonus;
 mod soma_simples;
+mod conversao_de_tempo;
+mod idade_em_dias;
+mod teste_de_selecao_1;
 
 use std::collections::HashMap;
 use std::env;
@@ -38,7 +41,10 @@ fn main() {
         ("1015", get_as_fn(dois_pontos::main)),
         ("1016", get_as_fn(distancia::main)),
         ("1017", get_as_fn(gasto_combustivel::main)),
-        ("1018", get_as_fn(cedulas::main))
+        ("1018", get_as_fn(cedulas::main)),
+        ("1019", get_as_fn(conversao_de_tempo::main)),
+        ("1020", get_as_fn(idade_em_dias::main)),
+        ("1035", get_as_fn(teste_de_selecao_1::main))
     ]);
 
     let challenge: &String = match args.get(1) {
