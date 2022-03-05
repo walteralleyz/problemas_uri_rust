@@ -31,7 +31,7 @@ impl fmt::Display for Ballot {
     }
 }
 
-fn main() {
+pub fn main() {
     let mut x = String::new();
 
     stdin().read_line(&mut x).expect("Entrada incorreta!");

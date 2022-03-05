@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let h = convert_string_to_i16(get_input());
     let km = convert_string_to_i16(get_input());
 

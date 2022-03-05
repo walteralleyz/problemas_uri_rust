@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let mut a = String::new();
     let mut b = String::new();
     let err_msg = "Digite um inteiro!";

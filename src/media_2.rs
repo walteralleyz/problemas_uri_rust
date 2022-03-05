@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let formula: f64 = calc_x_by_weight(2.0) + calc_x_by_weight(3.0) + calc_x_by_weight(5.0);
     println!("MEDIA = {:.1}", formula / 10.0);
 }

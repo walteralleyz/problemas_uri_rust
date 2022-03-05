@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let km = convert_to_i16(get_input());
 
     println!("{} minutos", km*2);

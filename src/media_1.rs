@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let formula: f64 = (get_input_f64()*3.5) + (get_input_f64()*7.5);
     println!("MEDIA = {:.5}", formula / 11.0);
 }

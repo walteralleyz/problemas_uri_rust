@@ -1,8 +1,9 @@
+use std::f64::consts::PI;
 use std::io;
 
-fn main() {
+pub fn main() {
     let mut raio = String::new();
-    let n: f64 = 3.14159;
+    let n: f64 = PI;
 
     io::stdin().read_line(&mut raio).expect("Digite um número que seja double!");
 

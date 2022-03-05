@@ -1,7 +1,8 @@
 use std::io::stdin;
 
-fn main() {
-    println!("PROD = {}", get_input_i16() * get_input_i16());
+pub fn main() {
+    let formula: i16 = (get_input_i16()*get_input_i16()) - (get_input_i16()*get_input_i16());
+    println!("DIFERENCA = {}", formula);
 }
 
 fn get_input_i16() -> i16 {

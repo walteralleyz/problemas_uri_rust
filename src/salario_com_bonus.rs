@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let _nome = get_input_string();
     let salary = get_input_f64();
 

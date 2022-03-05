@@ -1,6 +1,6 @@
 use std::io;
 
-fn main() {
+pub fn main() {
     let mut a = String::new();
     let mut b = String::new();
 

@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let p1 = get_x_y();
     let p2 = get_x_y();
 

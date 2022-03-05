@@ -1,8 +1,9 @@
+use std::f64::consts::PI;
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let mut raio = String::new();
-    let pi = 3.14159;
+    let pi = PI;
     let d: f64 = 4.0/3.0;
 
     stdin().read_line(&mut raio).expect("Deve inserir um valor!");

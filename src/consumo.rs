@@ -1,7 +1,7 @@
 use std::io::stdin;
 use std::str::FromStr;
 
-fn main() {
+pub fn main() {
     let km = convert_string_to_type::<f64>(get_input_string());
     let gas = convert_string_to_type::<f64>(get_input_string());
 

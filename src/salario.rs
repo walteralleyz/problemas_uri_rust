@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let number = get_input_i16();
     let salary = calc_salary_per_hour(get_input_i16().into());
 

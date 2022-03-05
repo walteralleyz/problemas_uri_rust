@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let mut count = 0;
     let mut sum: f64 = 0.0;
 

@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-fn main() {
+pub fn main() {
     let tup: (i16, i16, i16) = get_mult_input_int();
 
     let maior_ab = (tup.0+tup.1+(tup.0-tup.1).abs())/2;
