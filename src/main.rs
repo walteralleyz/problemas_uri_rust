@@ -46,7 +46,10 @@ fn main() {
         None => panic!("Número do desafio esperado!")
     };
 
-    executor.get(challenge.as_str()).unwrap()();
+    match executor.get(challenge.as_str()) {
+        Some(f) => f(),
+        None => panic!("Desafio não encontrado!")
+    };
 }
 
 fn get_as_fn(f: fn() -> ()) -> fn() {
