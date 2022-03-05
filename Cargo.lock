@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "hello_world"
-version = "0.1.0"
+name = "problemas_uri_rust"
+version = "0.1.5"
