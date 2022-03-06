@@ -1,26 +1,10 @@
-mod basico;
-mod calcular_area;
-mod calculo_simples;
-mod cedulas;
-mod consumo;
-mod diferenca;
-mod dois_pontos;
-mod distancia;
-mod esfera;
-mod gasto_combustivel;
-mod media_1;
-mod media_2;
-mod o_maior;
-mod produto_simples;
-mod salario;
-mod salario_com_bonus;
-mod soma_simples;
-mod conversao_de_tempo;
-mod idade_em_dias;
-mod teste_de_selecao_1;
+mod challenges;
 
 use std::collections::HashMap;
 use std::env;
+use crate::challenges::{basico, calcular_area, soma_simples, produto_simples, media_1, media_2,
+diferenca, salario, salario_com_bonus, calculo_simples, esfera, o_maior, consumo, dois_pontos,
+distancia, gasto_combustivel, cedulas, conversao_de_tempo, idade_em_dias, teste_de_selecao_1};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
