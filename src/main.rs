@@ -4,7 +4,8 @@ use std::collections::HashMap;
 use std::env;
 use crate::challenges::{basico, calcular_area, soma_simples, produto_simples, media_1, media_2,
 diferenca, salario, salario_com_bonus, calculo_simples, esfera, o_maior, consumo, dois_pontos,
-distancia, gasto_combustivel, cedulas, conversao_de_tempo, idade_em_dias, teste_de_selecao_1};
+distancia, gasto_combustivel, cedulas, conversao_de_tempo, idade_em_dias, teste_de_selecao_1,
+intervalo, bhaskara};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -28,18 +29,17 @@ fn main() {
         ("1018", get_as_fn(cedulas::main)),
         ("1019", get_as_fn(conversao_de_tempo::main)),
         ("1020", get_as_fn(idade_em_dias::main)),
-        ("1035", get_as_fn(teste_de_selecao_1::main))
+        ("1035", get_as_fn(teste_de_selecao_1::main)),
+        ("1036", get_as_fn(bhaskara::main)),
+        ("1037", get_as_fn(intervalo::main))
     ]);
 
-    let challenge: &String = match args.get(1) {
-        Some(val) => val,
-        None => panic!("Número do desafio esperado!")
-    };
+    println!("{}", if let Some(val) = args.get(1) {
+        if let Some(f) = executor.get(val.as_str()) { f(); "Executado!" }
+        else { "Problema não encontrado!" }
+    }
 
-    match executor.get(challenge.as_str()) {
-        Some(f) => f(),
-        None => panic!("Desafio não encontrado!")
-    };
+    else { "Precisa de um argumento para encontrar o problema!" })
 }
 
 fn get_as_fn(f: fn() -> ()) -> fn() {

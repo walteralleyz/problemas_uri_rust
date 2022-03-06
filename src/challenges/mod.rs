@@ -18,3 +18,5 @@ pub mod salario;
 pub mod salario_com_bonus;
 pub mod soma_simples;
 pub mod teste_de_selecao_1;
+pub mod intervalo;
+pub mod bhaskara;
