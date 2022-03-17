@@ -23,3 +23,7 @@ pub mod bhaskara;
 pub mod lanche;
 pub mod ddd;
 pub mod imposto_de_renda;
+pub mod sort_simples;
+pub mod mes;
+pub mod numeros_pares;
+pub mod numeros_positivos;
