@@ -5,7 +5,7 @@ use std::env;
 use crate::challenges::{basico, calcular_area, soma_simples, produto_simples, media_1, media_2,
 diferenca, salario, salario_com_bonus, calculo_simples, esfera, o_maior, consumo, dois_pontos,
 distancia, gasto_combustivel, cedulas, conversao_de_tempo, idade_em_dias, teste_de_selecao_1,
-intervalo, bhaskara};
+intervalo, bhaskara, lanche, ddd, imposto_de_renda};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -31,7 +31,10 @@ fn main() {
         ("1020", get_as_fn(idade_em_dias::main)),
         ("1035", get_as_fn(teste_de_selecao_1::main)),
         ("1036", get_as_fn(bhaskara::main)),
-        ("1037", get_as_fn(intervalo::main))
+        ("1037", get_as_fn(intervalo::main)),
+        ("1038", get_as_fn(lanche::main)),
+        ("1050", get_as_fn(ddd::main)),
+        ("1051", get_as_fn(imposto_de_renda::main))
     ]);
 
     println!("{}", if let Some(val) = args.get(1) {

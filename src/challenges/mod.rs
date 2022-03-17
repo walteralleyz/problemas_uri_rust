@@ -20,3 +20,6 @@ pub mod soma_simples;
 pub mod teste_de_selecao_1;
 pub mod intervalo;
 pub mod bhaskara;
+pub mod lanche;
+pub mod ddd;
+pub mod imposto_de_renda;
