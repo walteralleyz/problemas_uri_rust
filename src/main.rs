@@ -6,6 +6,7 @@ use std::env;
 fn main() {
     let args: Vec<String> = env::args().collect();
     let executor: HashMap<&'static str, fn()> = HashMap::from([
+    	("hack", get_as_fn(challenges::hacker_rank::main)),
         ("1001", get_as_fn(challenges::basico::main)),
         ("1002", get_as_fn(challenges::calcular_area::main)),
         ("1003", get_as_fn(challenges::soma_simples::main)),
