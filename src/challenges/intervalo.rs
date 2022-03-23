@@ -14,8 +14,12 @@ pub fn main() {
         let i1 = pair[1] as f64;
 
         if interval >= i0 && interval <= i1 {
-            message = format!("Intervalo {}{},{}]",
-                     if i0 == 0.0 { "[" } else { "(" }, pair[0], pair[1]);
+            message = format!(
+                "Intervalo {}{},{}]",
+                if i0 == 0.0 { "[" } else { "(" },
+                pair[0],
+                pair[1]
+            );
 
             break;
         }

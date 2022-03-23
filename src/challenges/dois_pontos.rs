@@ -4,10 +4,10 @@ pub fn main() {
     let p1 = get_x_y();
     let p2 = get_x_y();
 
-    let r1 = (p2.0-p1.0)*(p2.0-p1.0);
-    let r2 = (p2.1-p1.1)*(p2.1-p1.1);
+    let r1 = (p2.0 - p1.0) * (p2.0 - p1.0);
+    let r2 = (p2.1 - p1.1) * (p2.1 - p1.1);
 
-    let formula = (r1+r2).sqrt();
+    let formula = (r1 + r2).sqrt();
 
     println!("{:.4}", formula);
 }
@@ -25,5 +25,8 @@ fn get_x_y() -> (f64, f64) {
 }
 
 fn split_string_and_convert_to_f64(x: &String, pos: usize) -> f64 {
-    x.split(" ").collect::<Vec<&str>>()[pos].trim().parse().unwrap()
+    x.split(" ").collect::<Vec<&str>>()[pos]
+        .trim()
+        .parse()
+        .unwrap()
 }

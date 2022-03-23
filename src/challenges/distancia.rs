@@ -3,7 +3,7 @@ use std::io::stdin;
 pub fn main() {
     let km = convert_to_i16(get_input());
 
-    println!("{} minutos", km*2);
+    println!("{} minutos", km * 2);
 }
 
 fn get_input() -> String {

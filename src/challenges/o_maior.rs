@@ -3,8 +3,8 @@ use std::io::stdin;
 pub fn main() {
     let tup: (i16, i16, i16) = get_mult_input_int();
 
-    let maior_ab = (tup.0+tup.1+(tup.0-tup.1).abs())/2;
-    let maior_abc = (maior_ab+tup.2+(maior_ab-tup.2).abs())/2;
+    let maior_ab = (tup.0 + tup.1 + (tup.0 - tup.1).abs()) / 2;
+    let maior_abc = (maior_ab + tup.2 + (maior_ab - tup.2).abs()) / 2;
 
     println!("{} eh o maior", maior_abc);
 }

@@ -14,6 +14,6 @@ pub fn main() {
 fn get_string_as_i16(val: String) -> i16 {
     match val.trim().parse() {
         Ok(res) => res,
-        Err(_) => 0
+        Err(_) => 0,
     }
 }

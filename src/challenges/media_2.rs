@@ -11,11 +11,13 @@ fn calc_x_by_weight(weight: f64) -> f64 {
 
 fn get_input_f64() -> f64 {
     let mut x = String::new();
-    
-    stdin().read_line(&mut x).expect("Valor numérico dupla precisão esperado!");
+
+    stdin()
+        .read_line(&mut x)
+        .expect("Valor numérico dupla precisão esperado!");
 
     match x.trim().parse() {
         Ok(res) => res,
-        Err(_) => 0.00
+        Err(_) => 0.00,
     }
 }

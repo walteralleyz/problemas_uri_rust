@@ -8,10 +8,12 @@ pub fn main() {
 }
 
 fn get_input_int(recep: &mut String) -> i16 {
-    io::stdin().read_line(recep).expect("Digite um numero valido!");
+    io::stdin()
+        .read_line(recep)
+        .expect("Digite um numero valido!");
 
     match recep.trim().parse() {
         Ok(val) => val,
-        Err(_) => 0
+        Err(_) => 0,
     }
 }

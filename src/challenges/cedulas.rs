@@ -1,10 +1,10 @@
-use std::io::stdin;
 use std::fmt;
+use std::io::stdin;
 
 #[derive(Debug)]
 struct Ballot {
     value: i32,
-    quantity: i16
+    quantity: i16,
 }
 
 impl Ballot {
@@ -27,7 +27,12 @@ impl Ballot {
 
 impl fmt::Display for Ballot {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "{} nota(s) de R$ {},00", self.get_quantity(), self.get_value())
+        write!(
+            f,
+            "{} nota(s) de R$ {},00",
+            self.get_quantity(),
+            self.get_value()
+        )
     }
 }
 
@@ -55,7 +60,7 @@ fn count_possible_ballot(draw: &mut i32) -> Vec<Ballot> {
         Ballot::new(10, 0),
         Ballot::new(5, 0),
         Ballot::new(2, 0),
-        Ballot::new(1, 0)
+        Ballot::new(1, 0),
     ];
 
     while *draw != 0 {

@@ -3,7 +3,7 @@ use std::io::stdin;
 pub fn main() {
     let (a, b, c) = get_input_f64();
 
-    let inner_sqrt: f64 = (b*b) - (4.0*a*c);
+    let inner_sqrt: f64 = (b * b) - (4.0 * a * c);
 
     if inner_sqrt < 0.0 {
         println!("Impossivel calcular");
@@ -11,7 +11,7 @@ pub fn main() {
     }
 
     let sqrt = inner_sqrt.sqrt();
-    let under = 2.0*a;
+    let under = 2.0 * a;
     let a1 = -b + sqrt;
     let a2 = -b - sqrt;
 
@@ -20,8 +20,8 @@ pub fn main() {
         return;
     }
 
-    let r1 = a1/under;
-    let r2 = a2/under;
+    let r1 = a1 / under;
+    let r2 = a2 / under;
 
     println!("R1 = {:.5}\nR2 = {:.5}", r1, r2);
 }

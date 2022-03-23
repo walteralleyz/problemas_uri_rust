@@ -5,7 +5,9 @@ pub fn main() {
     let mut sum: f64 = 0.0;
 
     loop {
-        if count == 2 { break; }
+        if count == 2 {
+            break;
+        }
 
         let line = get_input_string();
         let values: Vec<&str> = line.split(" ").collect();
@@ -13,7 +15,7 @@ pub fn main() {
         let qntd: f64 = cast_string_to_f64(values[1].to_string());
         let price: f64 = cast_string_to_f64(values[2].to_string());
 
-        sum += price*qntd;
+        sum += price * qntd;
 
         count += 1;
     }
@@ -32,6 +34,6 @@ fn get_input_string() -> String {
 fn cast_string_to_f64(value: String) -> f64 {
     match value.trim().parse() {
         Ok(res) => res,
-        Err(_) => 0.0
+        Err(_) => 0.0,
     }
 }

@@ -16,12 +16,12 @@ fn get_input_string() -> String {
 }
 
 fn calc_salary_by_sales(salary: f64) -> f64 {
-    salary + (get_input_f64()*0.15)
+    salary + (get_input_f64() * 0.15)
 }
 
 fn get_input_f64() -> f64 {
     match get_input_string().trim().parse() {
         Ok(res) => res,
-        Err(_) => 0.00
+        Err(_) => 0.00,
     }
 }

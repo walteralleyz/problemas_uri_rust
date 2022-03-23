@@ -7,9 +7,9 @@ pub fn main() {
 
     let d: u16 = d.trim().parse().unwrap();
 
-    let y = d/365;
-    let m = (d%365)/30;
-    let d = (d%365)%30;
+    let y = d / 365;
+    let m = (d % 365) / 30;
+    let d = (d % 365) % 30;
 
     println!("{} ano(s)\n{} mes(es)\n{} dia(s)", y, m, d);
 }

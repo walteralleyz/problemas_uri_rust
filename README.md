@@ -1,12 +1,22 @@
-## Problemas URI com Rust
-#### **As vezes Rust é uma delicinha**
+## URI Problems with Rust
+#### **Sometimes RUST is Sweet**
 
-Esse repo foi criado no intuito de aprender Rust começando pelos problemas básicos.
+This repo was created for training purpose.
 
-*Requisitos* <br/>
-Rust 1.58 instalado
+*I'll need* <br/>
+Rust 1.58 installed
 
-*Como executar*
+*How to Run* (With Cargo)
 ~~~
-cargo run NUMERO_DESAFIO
+$ cargo run CHALLENGE_NUMBER
+OR -- target on hacker rank
+$ cargo run hack CHALLENGE_NAME
+~~~
+
+*How to Run* (With Rust Compiler)
+~~~
+$ rustc ./src/main.rs
+$ ./main CHALLENGE_NUMBER
+OR -- target on hacker rank
+$ ./main hack CHALLENGE_NAME
 ~~~

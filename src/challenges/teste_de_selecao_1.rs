@@ -3,7 +3,9 @@ use std::io::stdin;
 pub fn main() {
     let mut tup = String::new();
 
-    stdin().read_line(&mut tup).expect("4 valores são esperados!");
+    stdin()
+        .read_line(&mut tup)
+        .expect("4 valores são esperados!");
 
     let tup: Vec<&str> = tup.split(" ").collect();
 
@@ -17,12 +19,12 @@ pub fn main() {
     if values.1 > values.2
         && values.3 > values.0
         && (values.2 + values.3) > (values.0 + values.1)
-        && values.2 > 0 && values.3 > 0
-        && values.0 % 2 == 0 {
+        && values.2 > 0
+        && values.3 > 0
+        && values.0 % 2 == 0
+    {
         println!("Valores aceitos");
-    }
-
-    else {
+    } else {
         println!("Valores nao aceitos");
     }
 }

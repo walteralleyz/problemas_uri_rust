@@ -1,5 +1,5 @@
-use std::io::stdin;
 use std::collections::hash_map::HashMap;
+use std::io::stdin;
 
 pub fn main() {
     let mut ddd_table: HashMap<u8, &str> = HashMap::new();
@@ -11,20 +11,16 @@ pub fn main() {
     ddd_table.insert(19, "Campinas");
     ddd_table.insert(27, "Vitoria");
     ddd_table.insert(31, "Belo Horizonte");
-    
+
     let mut ddd = String::new();
-    
+
     stdin().read_line(&mut ddd).expect("Expect a value!");
-    
+
     let ddd: u8 = ddd.trim().parse().unwrap();
-    
+
     if let Some(res) = ddd_table.get(&ddd) {
         println!("{}", res);
-    }
-    
-    else {
+    } else {
         println!("DDD nao cadastrado");
     }
-    
-    
 }
