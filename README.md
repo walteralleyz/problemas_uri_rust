@@ -3,7 +3,7 @@
 
 This repo was created for training purpose.
 
-*I'll need* <br/>
+*You'll need* <br/>
 Rust 1.58 installed
 
 *How to Run* (With Cargo)
